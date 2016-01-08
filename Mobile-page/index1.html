@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html style="height: 100%;">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>无标题文档</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<link rel="stylesheet" href="css/iconStyle.css" />
+<script src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript">
+function JS() {
+ document.getElementByClassName("content").style.borderColor='#ff0000';
+}
+</script>
+</head>
+
+<body style="height: 100%;">
+	<div class="wrap">
+    	<div class="examplebox"><span>样本报告赏析</span></div>
+    <div class="form-content">
+    	<table>
+        	<form id="form" action="#" method="post" name="">
+        		
+            <tr>
+            	<td>
+                    <span class="fontdarkgery">选择本次参加的免费体验项目</span>
+                  
+                  <div class="experience">
+                  	<div class="radiobox"><input type="radio" class="radio"></div>
+                  	<div class="input-out1">  <input type="text" value="Halo pocket" />
+                  		 <span class="intro">这里是项目的简介，这里是项目的简介，这里是项目的简介</span>
+                  	</div>           
+                  </div>
+               
+                </td>
+            </tr>
+           
+           	
+            <tr>
+            	<td>
+                  
+                  
+                  <div class="experience">
+                  	<div class="radiobox"><input type="radio" class="radio"></div>
+                  	<div class="input-out1">  <input type="text" value="Halo stroe" />
+                  		  <span class="intro">这里是项目的简介，这里是项目的简介，这里是项目的简介</span>
+                  	</div>           
+                  </div>
+               
+                </td>
+            </tr>
+          
+             <tr>
+            	<td>
+                    <span class="fontdarkgery">授权说明：本服务是由Xmandata提供的Trail服务，需要您同意访问你的信息，等等等等。</span>
+                   <div class="centerbox">
+                   	<div class="unfold">
+                    	展开<i class="icon-point"></i>
+                    </div>
+                    <div class="allow">
+                    	<input type="checkbox"  class="checkbox"/><span class="agree">我同意上述条款</span>
+                    </div>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+            	<td>
+                	<center><input type="submit" value="提交" id="submit"></center>
+                </td>
+            </tr>
+            </form>
+        </table>
+   </div>
+    </div>
+<script>
+$(document).ready(function(){
+	$('input[type=text]').focus(function(){
+    		$(this).addClass("add-border");
+    		$(this).next().addClass("add-color");
+    		if(!this.initValue){
+				this.initValue = this.placeholder;
+			}
+			if(this.placeholder === this.initValue){
+				this.placeholder = '';
+			}
+    	}).blur(function(){
+    		$(this).removeClass("add-border");
+    		$(this).next().removeClass("add-color");
+    		if(this.placeholder === '' || this.placeholder === null){
+				this.placeholder = this.initValue;
+			}
+		});
+	$('.post-img').click(function(){
+		$(this).children().removeClass("icon-point");
+		$(this).children().addClass("icon-check").css("color","#FF9A00");
+	})
+	$('.post-img').click(function(){
+		$(this).children().removeClass("icon-point");
+		$(this).children().addClass("icon-check").css("color","#FF9A00");
+	})
+});
+</script>
+
+
+</body>
+</html>

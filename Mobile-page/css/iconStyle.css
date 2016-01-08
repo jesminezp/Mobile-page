@@ -1,0 +1,52 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot?ei2ezk');
+	src:url('../fonts/icomoon.eot?#iefixei2ezk') format('embedded-opentype'),
+		url('../fonts/icomoon.ttf?ei2ezk') format('truetype'),
+		url('../fonts/icomoon.woff?ei2ezk') format('woff'),
+		url('../fonts/icomoon.svg?ei2ezk#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-user:before {
+	content: "\e600";
+}
+.icon-address:before {
+	content: "\e601";
+}
+.icon-password:before {
+	content: "\e602";
+}
+.icon-creditCard:before {
+	content: "\e603";
+}
+.icon-idCard:before {
+	content: "\e604";
+}
+.icon-license:before {
+	content: "\e605";
+}
+.icon-contact:before {
+	content: "\e606";
+}
+.icon-check:before {
+	content: "\e607";
+}
+.icon-point:before {
+	content: "\e608";
+}
